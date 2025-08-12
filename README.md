@@ -12,12 +12,37 @@ I used various sources as inspiration for the design aspects of my website, incl
 <p align="center">
   <img width="454" height="586" alt="1" src="https://github.com/user-attachments/assets/925838e1-44d2-4597-8443-c70c5337da44" />
   <br>
-  <em>Image 1: Homepage and About Me Page</em>
+  <em>Image 1: Homepage and About Me Page Biography</em>
 </p>
-
 
 <p align="center">
   <img width="455" height="586" alt="2" src="https://github.com/user-attachments/assets/edfba0ea-d7e2-41bc-a546-31acbce506d1" />
   <br>
-  <em>Image 2: About Me Page Continued</em>
+  <em>Image 2: About Me Page - My Skills</em>
 </p>
+
+<p align="center">
+  <img width="457" height="590" alt="3" src="https://github.com/user-attachments/assets/be85df2c-611c-4394-945b-436d5e95e7e1" />
+  <br>
+  <em>Image 3: About Me Page - Outside of the Classroom</em>
+</p>
+
+<p align="center">
+  <img width="458" height="409" alt="4" src="https://github.com/user-attachments/assets/a37992f3-6ab0-411d-a05c-3e2e33cfa5d2" />
+  <br>
+  <em>Image 4: Portfolio Page</em>
+</p>
+
+<p align="center">
+  <img width="455" height="586" alt="5" src="https://github.com/user-attachments/assets/814d9541-d4ed-4380-9680-ea924fe41532" />
+  <br>
+  <em>Image 5: Blog Page</em>
+</p>
+
+<p align="center">
+  <img width="455" height="403" alt="6" src="https://github.com/user-attachments/assets/36f458df-e54b-475e-b11d-92ac661a0e0b" />
+  <br>
+  <em>Image 6: Contact Me Page</em>
+</p>
+
+

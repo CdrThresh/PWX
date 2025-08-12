@@ -15,7 +15,7 @@ I used various sources as inspiration for the design aspects of my website, incl
   <em>Image 1: Homepage and About Me Page</em>
 </p>
 
-<br><br>
+
 <p align="center">
   <img width="455" height="586" alt="2" src="https://github.com/user-attachments/assets/edfba0ea-d7e2-41bc-a546-31acbce506d1" />
   <br>

@@ -45,4 +45,7 @@ I used various sources as inspiration for the design aspects of my website, incl
   <em>Image 6: Contact Me Page</em>
 </p>
 
+<br><br>
+
+8/12/2025: Cloned down the repository to my local machine and created local files. 
 

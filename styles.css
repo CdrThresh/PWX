@@ -1,0 +1,117 @@
+/* Resetting to default styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #ffffff; /* White text */
+}
+
+/* Navbar styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1f1f1f; /* Slightly darker shade for the navbar */
+    padding: 1rem 2rem;
+}
+
+nav .logo {
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #2979FF; /* Electric blue accent */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: #ccc;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    color: #2979FF;
+    outline: none;
+}
+
+/* Container for the intro text and image */
+.intro-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 3rem;
+    gap: 3rem;
+    flex-wrap: wrap; /* Accounting for mobile users */
+}
+
+/* Text block */
+.intro-text {
+    flex: 1 1 400px; /* grow, shrink, basis */
+    max-width: 600 px;
+}
+
+.intro-text h1 {
+    font-size: 3rem;
+    margin: 0 0 0.3rem 0;
+    font-weight: 700;
+}
+
+.intro-text h2.highlight {
+    font-size: 3rem;
+    color: #2979FF;
+    margin: 0 0 1rem 0;
+    font-weight: 700;
+}
+
+.intro-text p.subtext {
+    font-size: 1.2rem;
+    color: #bbb;
+    margin: 0.3rem 0;
+}
+
+/* Image container and styling */
+.intro-image {
+    flex: 0 0 220px; /* fixed size */
+    max-width: 220px;
+}
+
+.intro-image img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%; /* circle */
+    object-fit: cover;
+    border: 4px solid #2979FF;
+    box-shadow: 0 0 20px rgba(41, 121, 255, 0.7);
+    display: block;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    .intro-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro-image {
+        margin-top: 2rem;
+        flex: none;
+        max-width: 180px;
+    }
+
+    .intro-image img {
+        width: 180px;
+        height: 180 px;
+    }
+}

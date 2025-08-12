@@ -47,5 +47,9 @@ I used various sources as inspiration for the design aspects of my website, incl
 
 <br><br>
 
-8/12/2025: Cloned down the repository to my local machine and created local files. 
+8/12/2025: Cloned down the repository to my local machine.
+
+Setup local files such as index.html, contact.html, etc.
+
+Finished index.html, styles.css, and contact.html with imbedded css due to a limited page size.
 

@@ -53,3 +53,5 @@ Setup local files such as index.html, contact.html, etc.
 
 Finished index.html, styles.css, and contact.html with imbedded css due to a limited page size.
 
+Finished contact.html for the projects page.
+

@@ -59,7 +59,7 @@ nav ul li a:focus {
 /* Text block */
 .intro-text {
     flex: 1 1 400px; /* grow, shrink, basis */
-    max-width: 600 px;
+    max-width: 600px;
 }
 
 .intro-text h1 {
@@ -112,6 +112,6 @@ nav ul li a:focus {
 
     .intro-image img {
         width: 180px;
-        height: 180 px;
+        height: 180px;
     }
 }

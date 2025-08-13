@@ -55,3 +55,5 @@ Finished index.html, styles.css, and contact.html with imbedded css due to a lim
 
 Finished contact.html for the projects page.
 
+Finished portfolio.html. Decided to do imbedded css again due to a limited page size. The page will feature "cards" that will be clickable and take the user to the respective github repo for that project. 
+

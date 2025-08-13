@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Blog | Devin Chen</title>
+        <style>
+            body {
+                background-color: #121212;
+                color: #fff;
+                font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                margin: 0;
+                padding: 2rem;
+            }
+            h1 {
+                text-align: center;
+                margin-bottom: 2rem;
+                color: #2979FF;
+            }
+            .grid-container {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                gap: 2rem;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+            .topic-card {
+                background-color: #1f1f1f;
+                border-radius: 8px;
+                overflow: hidden;
+                box-shadow: 0 4px 10px rgba(41, 121, 255, 0.3);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-decoration: none;
+                color: inherit;
+                padding: 2rem 1.5rem;
+            }
+            .topic-card:hover {
+                transform: translateY(-5px) scale(1.02);
+                box-shadow: 0 8px 20px rgba(41, 121, 255, 0.6);
+            }
+            .emoji {
+                font-size: 3rem;
+                margin-bottom: 1rem;
+            }
+            .topic-title {
+                font-size: 1.5rem;
+                margin: 0 0 0.5rem 0;
+                font-weight: 700;
+                color: #2979FF;
+            }
+            .topic-description{
+                font-size: 1rem;
+                color: #bbb;
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Welcome to My Blog!</h1>
+        <div class="grid-container">
+
+            <a href="piano.html" class="topic-card">
+                <div class="emoji" aria-label="Piano">🎹</div>
+                <h2 class="topic-title">Piano</h2>
+                <p class="topic-description">
+                    Tips, practice logs, and performance stories.
+                </p>
+            </a>
+
+            <a href="cybersecurity.html" class="topic-card">
+                <div class="emoji" aria-label="Cybersecurity">🛡️</div>
+                <h2 class="topic-title">Cybersecurity</h2>
+                <p class="topic-description">
+                    Online safety guides, tools, and security insights.
+                </p>
+            </a>
+
+            <a href="cooking.html" class="topic-card">
+                <div class="emoji" aria-label="Cooking">🍳</div>
+                <h2 class="topic-title">Devin's Kitchen</h2>
+                <p class="topic-description">
+                    Exploring recipes, tips, and culinary adventures.
+                </p>
+            </a>
+
+            <a href="volunteering.html" class="topic-card">
+                <div class="emoji" aria-label="Volunteering">💖</div>
+                <h2 class="topic-title">Volunteering</h2>
+                <p class="topic-description">
+                    Stories and experiences from giving back to the community. 
+                </p>
+            </a>
+            
+            <a href="fitness.html" class="topic-card">
+                <div class="emoji" aria-label="Fitness">💪</div>
+                <h2 class="topic-title">Fitness</h2>
+                <p class="topic-description">
+                    My journey towards better physical health. 
+                </p>
+            </a>
+
+            <a href="foreignlanguages.html" class="topic-card">
+                <div class="emoji" aria-label="Foreign Languages">🗣️</div>
+                <h2 class="topic-title">Foreign Languages</h2>
+                <p class="topic-description">
+                    Learning and practicing different languages from around the world. 
+                </p>
+            </a>
+
+        </div>
+    </body>
+</html>

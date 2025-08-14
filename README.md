@@ -1,6 +1,4 @@
-<div align="center">
-  # Personal Website
-</div>
+<h1 align="center">My Personal Website</h1>
 
 ## 8/11/2025: 
 

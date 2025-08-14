@@ -74,8 +74,10 @@
 8/14/2025:
 
 (1.) Added navbar.html and navbar.js to make dynamic importable navbar features to each .html page. This makes it so that I don't have to include navbar code on each .html page. And changing those two elements will update the rest of the .html pages, which is good because there will be so many .html pages in the end.
+
 (2.) Added a "Back to Blog" navigational back arrow on the 6 card landing pages. 
-(3.) Added a "Back to (card_name_)" navigational back arrow on each of the article pages.
+
+(3.) Added a "Back to (card_name)" navigational back arrow on each of the article pages.
 
 
 

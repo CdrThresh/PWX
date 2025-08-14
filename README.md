@@ -79,5 +79,7 @@
 
 (3.) Added a "Back to (card_name)" navigational back arrow on each of the article pages.
 
+(4.) Finished about.html with bio, picture, skills, and extracurriculars section.
+
 
 

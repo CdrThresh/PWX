@@ -11,12 +11,15 @@ body {
 }
 
 /* Navbar styling */
-nav {
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #1f1f1f; /* Slightly darker shade for the navbar */
     padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 nav .logo {
@@ -25,7 +28,7 @@ nav .logo {
     color: #2979FF; /* Electric blue accent */
 }
 
-nav ul {
+.nav-links {
     list-style: none;
     display: flex;
     gap: 2rem;
@@ -40,8 +43,8 @@ nav ul li a {
     transition: color 0.3s ease;
 }
 
-nav ul li a:hover,
-nav ul li a:focus {
+.navbar ul li a:hover,
+.navbar ul li a:focus {
     color: #2979FF;
     outline: none;
 }

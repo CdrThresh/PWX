@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About | Devin Chen</title>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            /* Hero Section */
+            .hero {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 5rem 2rem;
+                gap: 2rem;
+                overflow: hidden;
+            }
+            .hero::before {
+                content: "";
+                position: absolute;
+                inset: 0;
+                background: url('images/vintage-wereldkaart-met-kompas-op-fotobehang_9.jpg') no repeat center center/cover;
+                filter: brightness(0.4);
+                z-index: 0;
+            }
+            .hero-text {
+                position: relative;
+                z-index: 1;
+                background: rgba(255, 248, 220, 0.9);
+                padding: 2rem;
+                border-radius: 12px;
+                max-width: 600px;
+                box-shadow: 0 8px 20px rgba(41, 121, 255, 0.3);
+                color: #121212;
+            }
+            .hero-text p {
+                line-height: 1.6;
+                text-align: left;
+            }
+            .hero img {
+                position: relative;
+                z-index: 1;
+                max-width: 350px;
+                border-radius: 12px;
+                object-fit: cover;
+                box-shadow: 0 8px 20px rgba(41, 121, 255, 0.3);
+            }
+            /* Responsive hero */
+            @media (max-width: 900px) {
+                .hero {
+                    flex-direction: column;
+                    padding: 3rem 1rem;
+                    gap: 1.5rem;
+                }
+                .hero-text {
+                    max-width: 100%;
+                    padding: 1.5rem;
+                }
+                .hero img {
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
+
+            /* Resume Button */
+            .resume {
+                text-align: center;
+                margin: 3rem 0;
+            }
+            .resume a {
+                display: inline-block;
+                background-color: #2979FF;
+                color: white;
+                padding: 1rem 2rem;
+                text-decoration: none;
+                border-radius: 8px;
+                font-weight: bold;
+                transition: background 0.3s ease, transform 0.3s ease;
+            }
+            .resume a:hover {
+                background-color: #1c5ccc;
+                transform: translateY(-3px);
+            }
+
+            /* Section Headings */
+            section h2 {
+                text-align: center;
+                color: #2979FF;
+                font-size: 2rem;
+                margin-bottom: 2rem;
+            }
+
+            /* Cards */
+            .cards {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+                gap: 2rem;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+            .card {
+                background-color: #1f1f1f;
+                border-radius: 8px;
+                text-align: center;
+                padding: 2rem 1rem;
+                box-shadow: 0 4px 10px rgba(41, 121, 255, 0.3);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+            .card:hover {
+                transform: translateY(-5px) scale(1.02);
+                box-shadow: 0 8px 20px rgba(41, 121, 255, 0.6);
+            }
+            .card-emoji {
+                font-size: 3rem;
+                margin-bottom: 0.5rem;
+            }
+            .card-title {
+                font-size: 1.2rem;
+                font-weight: bold;
+                color: #2979FF;
+                margin-bottom: 0.5rem;
+            }
+            .card-desc {
+                font-size: 0.95rem;
+                color: #bbb;
+            }
+            .card-desc ul {
+                list-style: none; /* Removes default bullets */
+                padding: 0;
+                margin: 0;
+            }
+            .card-desc li {
+                margin-bottom: 0.5rem; /* Adds spacing between items */
+            }
+            .card-desc li:hover {
+                color: #fff;
+                cursor: default;
+            }
+            .card-desc li::before {
+                content: "•"; /* or use an emoji like "💡" */
+                color: #2979FF;
+                display: inline-block;
+                width: 1em;
+                margin-left: -1em;
+            }
+            html {
+                scroll-behavior: smooth; /* Smooth scrolling */
+            }
+            /* Fade-in Animation */
+            .fade-in {
+                opacity: 0;
+                transform: translateY(20px);
+                transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+            }
+            .fade-in.visible {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        </style>
+    </head>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const faders = document.querySelectorAll('.fade-in');
+
+    const observer = new IntersectionObserver(
+        (entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const index = Array.from(faders).indexOf(entry.target);
+                    // Stagger effect: delay increases for each element
+                    setTimeout(() => {
+                        entry.target.classList.add('visible');
+                    }, index * 150); //150 ms between each card fade
+                    observer.unobserve(entry.target); // optional: fade in once
+                }
+            });
+        }, 
+        { threshold: 0.2 } // adjust how much of the element is visible before fade
+    );
+
+    faders.forEach(fader => observer.observe(fader));
+    });
+    </script>
+
+    <body>
+
+        <!-- Auto fetching of the navbar to make it appear on every page. -->
+        <div id="navbar"></div>
+
+        <!-- Hero -->
+        <div class="hero">
+            <div class="hero-text fade-in" style="transition-delay: 0ms;">
+                <h1>Innovator. Creator. Game-Changer.</h1>
+                <p>
+                    I'm a junior at Mississippi State University, majoring in cybersecurity with minors in Russian and Mathematics.
+                    From K-12 security assessments to advanced threat detection research, I develop unique, forward-thinking solutions 
+                    that keep networks one step ahead of evolving threats. Off the clock, you'll find me exploring new tech, perfecting
+                    side projects, or traveling.
+                </p>
+            </div>
+
+            <img class="fade-in"src="images/about_rila.jpg" alt="Devin Chen" style="transition-delay: 300ms;">
+        </div>
+
+        <!-- Resume -->
+        <div class="resume">
+            <a href="files/Chen_Resume_Aug142025.pdf" download>📄 My Resume</a>
+        </div>
+
+        <!-- Skills -->
+        <section>
+            <h2>My Skills</h2>
+            <div class="cards">    
+                <div class="card fade-in">
+                    <div class="card-emoji">🔍</div>
+                    <div class="card-title">Threat Detection</div>
+                    <div class="card-desc">
+                        <ul>
+                            <li>Splunk</li>
+                            <li>Snort</li>   
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card fade-in">
+                    <div class="card-emoji">🌐</div>
+                    <div class="card-title">Network Analysis</div>
+                    <div class="card-desc">
+                        <ul>
+                            <li>Wireshark</li>
+                            <li>Tcpdump</li>
+                            <li>Nmap</li>    
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card fade-in">
+                    <div class="card-emoji">📜</div>
+                    <div class="card-title">GRC</div>
+                    <div class="card-desc">
+                        <ul>
+                            <li>CISA's CSET Tool</li>
+                            <li>CPG Standard</li>
+                            <li>Documentation</li>
+                            <li>Remediation</li>    
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card fade-in">
+                    <div class="card-emoji">📈</div>
+                    <div class="card-title">Research</div>
+                    <div class="card-desc">
+                        <ul>
+                            <li>Autonomous Vehicles</li>
+                            <li>MITRE ATT&CK Framework</li>
+                            <li>Data Visualization</li>
+                            <li>Efficacy of GRC Assessments on Reducing Risk</li>    
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card fade-in">
+                    <div class="card-emoji">💻</div>
+                    <div class="card-title">Coding</div>
+                    <div class="card-desc">
+                        <ul>
+                            <li>Python (2 years)</li>
+                            <li>Linux (2 years)</li>
+                            <li>Kali Linux (2 years)</li>
+                            <li>C/C++ (1 year)</li>
+                            <li>HTML/CSS (1 year)</li>   
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card fade-in">
+                    <div class="card-emoji">💡</div>
+                    <div class="card-title">Critical Thinking</div>
+                    <div class="card-desc">
+                        <ul>
+                            <li>Six Sigma/Lean</li>
+                            <li>Process Mapping/Flowcharts</li>
+                            <li>Data Analysis</li>
+                            <li>Pattern Identification</li>
+                            <li>Microsoft + Google Suite Tools</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card fade-in">
+                    <div class="card-emoji">🌍</div>
+                    <div class="card-title">Cross-Cultural Communication</div>
+                    <div class="card-desc">
+                        <ul>
+                            <li>Chinese, Mandarin (B1)</li>
+                            <li>Chinese, Kaipingnese (C1)</li>
+                            <li>Russian (B1)</li>
+                            <li>Spanish (B1)</li>
+                            <li>Arabic, MSA (A1)</li> 
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card fade-in">
+                    <div class="card-emoji">📅</div>
+                    <div class="card-title">Project Management</div>
+                    <div class="card-desc">
+                        <ul>
+                            <li>Six Sigma/Lean</li>
+                            <li>Asana</li>
+                            <li>Microsoft Planner</li>
+                            <li>Task Delegation</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Outside of the Classroom -->
+        <section>
+            <h2>Outside of the Classroom</h2>
+            <div class="cards">
+
+                <div class="card fade-in">
+                    <div class="card-emoji">🎹</div>
+                    <div class="card-title">Piano</div>
+                    <div class="card-desc">Performing and composing music in my free time.</div>
+                </div>
+
+                <div class="card fade-in">
+                    <div class="card-emoji">🍳</div>
+                    <div class="card-title">Cooking</div>
+                    <div class="card-desc">Exploring cultures through food.</div>
+                </div>
+
+                <div class="card fade-in">
+                    <div class="card-emoji">🌱</div>
+                    <div class="card-title">Gardening</div>
+                    <div class="card-desc">Growing plants and nurturing a sustainable garden.</div>
+                </div>
+
+                <div class="card fade-in">
+                    <div class="card-emoji">❤️</div>
+                    <div class="card-title">Volunteering</div>
+                    <div class="card-desc">In my spare time I volunteer with organizations like H4H.</div>
+                </div>
+
+                <div class="card fade-in">
+                    <div class="card-emoji">🥋</div>
+                    <div class="card-title">Taekwondo</div>
+                    <div class="card-desc">I am pursuing a lifelong goal of achieving a 4th-degree black belt.</div>
+                </div>
+                
+                <div class="card fade-in">
+                    <div class="card-emoji">🔊</div>
+                    <div class="card-title">Foreign Languages</div>
+                    <div class="card-desc">Chasing C-3PO status.</div>
+                </div>
+
+            </div>
+        </section>
+
+        <script src="navbar.js"></script>
+
+    </body>
+</html>

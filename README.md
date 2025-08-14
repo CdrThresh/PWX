@@ -1,12 +1,14 @@
 # Personal Website
 
-8/11/2025: Finished Wireframing for my personal website. 
+8/11/2025: 
 
-I used the GoodNotes app on my iPad to do this wireframe. Although there are alternatives such as Figma, I prefer the fluidity of being able to draw things out on my iPad. 
+(1.) Finished Wireframing for my personal website. 
 
-The plan is to use simple HTML and CSS to design this website since there really is no need for a backend. 
+(2.) I used the GoodNotes app on my iPad to do this wireframe. Although there are alternatives such as Figma, I prefer the fluidity of being able to draw things out on my iPad. 
 
-I used various sources as inspiration for the design aspects of my website, including Pinterest and Youtube. What makes sense the most to me is to have a Nav bar to allow the user to easily navigate between pages and having a separate page for each major topic. 
+(3.) The plan is to use simple HTML and CSS to design this website since there really is no need for a backend. 
+
+(4.) I used various sources as inspiration for the design aspects of my website, including Pinterest and Youtube. What makes sense the most to me is to have a Nav bar to allow the user to easily navigate between pages and having a separate page for each major topic. 
 
 <br><br>
 <p align="center">
@@ -49,15 +51,25 @@ I used various sources as inspiration for the design aspects of my website, incl
 
 8/12/2025: 
 
-(1) Cloned down the repository to my local machine.
+(1.) Cloned down the repository to my local machine.
 
-(2) Setup local files such as index.html, contact.html, etc.
+(2.) Setup local files such as index.html, contact.html, etc.
 
-(3) Finished index.html, styles.css, and contact.html with imbedded css due to a limited page size.
+(3.) Finished index.html, styles.css, and contact.html with imbedded css due to a limited page size.
 
-(4) Finished contact.html for the projects page.
+(4.) Finished contact.html for the projects page.
 
-Finished portfolio.html. Decided to do imbedded css again due to a limited page size. The page will feature "cards" that will be clickable and take the user to the respective github repo for that project. 
+(5.) Finished portfolio.html. Decided to do imbedded css again due to a limited page size. The page will feature "cards" that will be clickable and take the user to the respective github repo for that project. 
 
-8/13/2025: Finished
+8/13/2025: 
+
+(1.) Finished blog.html. The plan is to have "cards" on the overall blog page that then lead to unique topic pages. So for example, the 6 "cards" will be Cooking, Cybersecurity, Fitness, Foreign Languages, Piano, and Volunteering. Each card will have its own folder, so for example, "Piano" will have its own folder with "piano.html" in it as well as a folder named "articles".  Within "articles" will be all the articles pertaining to piano, so for example "piano_article1.html" and so on. The same applies for each of the 6 cards. 
+
+(2.) Finished creating the 6 card folders. 
+
+(3.) Finished creating the .html files for each of the card folders...piano.html, piano.html, etc.
+
+(4.) Finished creating the "articles" subfolders for each of the card folders as well as a placeholder article for each "articles" folder in each card folder. 
+
+
 

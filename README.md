@@ -47,13 +47,17 @@ I used various sources as inspiration for the design aspects of my website, incl
 
 <br><br>
 
-8/12/2025: Cloned down the repository to my local machine.
+8/12/2025: 
 
-Setup local files such as index.html, contact.html, etc.
+(1) Cloned down the repository to my local machine.
 
-Finished index.html, styles.css, and contact.html with imbedded css due to a limited page size.
+(2) Setup local files such as index.html, contact.html, etc.
 
-Finished contact.html for the projects page.
+(3) Finished index.html, styles.css, and contact.html with imbedded css due to a limited page size.
+
+(4) Finished contact.html for the projects page.
 
 Finished portfolio.html. Decided to do imbedded css again due to a limited page size. The page will feature "cards" that will be clickable and take the user to the respective github repo for that project. 
+
+8/13/2025: Finished
 

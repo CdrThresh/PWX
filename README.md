@@ -6,7 +6,7 @@
 
 (2.) I used the GoodNotes app on my iPad to do this wireframe. Although there are alternatives such as Figma, I prefer the fluidity of being able to draw things out on my iPad. 
 
-(3.) The plan is to use simple HTML and CSS to design this website since there really is no need for a backend. 
+(3.) The plan is to use simple HTML, CSS, and some JavaScript to design this website since there really is no need for a backend. 
 
 (4.) I used various sources as inspiration for the design aspects of my website, including Pinterest and Youtube. What makes sense the most to me is to have a Nav bar to allow the user to easily navigate between pages and having a separate page for each major topic. 
 

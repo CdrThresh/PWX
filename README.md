@@ -81,5 +81,7 @@
 
 (4.) Finished about.html with bio, picture, skills, and extracurriculars section.
 
+(5.) Edited contact.html to look consistent with other pages, also edited the .css to look more dynamic.
+
 
 

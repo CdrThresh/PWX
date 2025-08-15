@@ -3,30 +3,67 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Contact Me</title>
+        <title>Contact Me | Devin Chen</title>
         <link rel="stylesheet" href="styles.css">
         <style>
             body {
-                font-family: Arial, sans-serif;
-                background-color: #f9f9f9;
-                padding: 40px;
+                font-family: 'Segoe UI', sans-serif;
+                background-color: #121212;
+                color: #fff;
+                margin: 0;
+                padding: 0;;
             }
-            .contact-item {
+            h1 {
+                text-align: center;
+                color: #2979FF;
+                margin-top: 4rem;
+                margin-bottom: 2rem;
+                font-size: 2.5rem;
+            }
+            .contact-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 2rem;
+                padding: 0 1rem 4rem;
+                max-width: 600px;
+                margin: 0 auto;
+            }
+            .contact-card {
                 display: flex;
                 align-items: center;
-                margin-bottom: 15px;
+                gap: 1rem;
+                background: rgba(255, 248, 220, 0.1);
+                padding: 1.5rem 2rem;
+                border-radius: 12px;
+                width: 100%;
+                box-shadow: 0 8px 20px rgba(41, 121, 255, 0.3);
+                transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
             }
-            .contact-item img {
-                width: 30px;
-                height: 30px;
-                margin-right: 10px;
+            .contact-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 12px 30px rgba(41, 121, 255, 0.5);
+                background: rgba(255, 248, 200, 0.2);
             }
-            a {
-                color: #0077b5; /* LinkedIn blue */
+            .contact-card img {
+                width: 50px;
+                height: 50px;
+            }
+            .contact-card a {
+                color: #fff;
+                font-size: 1.2rem;
+                font-weight: bold;
                 text-decoration: none;
             }
-            a:hover {
+            .contact-card a:hover {
+                color: #2979FF;
                 text-decoration: underline;
+            }
+            @media (max-width: 600px) {
+                .contact-card {
+                    flex-direction: column;
+                    text-align: center;
+                }
             }
         </style>
     </head>
@@ -38,14 +75,14 @@
         <h1>Contact Me</h1>
 
         <!-- Email with Icon -->
-        <div class="contact-item">
-            <img src="images/gmail.png" alt="Gmail logo" width="40" height="40">
+        <div class="contact-card">
+            <img src="images/gmail.png" alt="Gmail logo">
             <a href="mailto:taunwe79@gmail.com">taunwe79@gmail.com</a>
         </div>
 
         <!-- LinkedIn URL with clickable text, but static logo -->
-        <div class="contact-item">
-            <img src="images/LI-In-Bug.png" alt="LinkedIn" width="40" height="40">
+        <div class="contact-card">
+            <img src="images/LI-In-Bug.png" alt="LinkedIn">
             <a href="https://www.linkedin.com/in/devin-chen-442751243/" target="_blank">My LinkedIn Profile</a>
         </div>
         

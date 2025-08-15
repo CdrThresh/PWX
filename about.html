@@ -157,31 +157,66 @@
                 opacity: 1;
                 transform: translateY(0);
             }
+            /* Outside of the Classroom grid */
+            .outside-cards {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+                gap: 2rem;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+            @media (max-width: 900px) {
+                .outside-cards {
+                    grid-template-columns: repeat(2, 1fr); /* 2 per row on tablets */
+                }
+            }
+
+            @media (max-width: 600px) {
+                .outside-cards {
+                    grid-template-columns: 1fr; /* 1 per row on mobile */
+                }
+            }
         </style>
     </head>
-    <script>
-    document.addEventListener('DOMContentLoaded', () => {
-    const faders = document.querySelectorAll('.fade-in');
-
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    // Fade-in for main cards
+    const faders = document.querySelectorAll('.fade-in:not(.outside-fade-in)');
     const observer = new IntersectionObserver(
         (entries, observer) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     const index = Array.from(faders).indexOf(entry.target);
-                    // Stagger effect: delay increases for each element
                     setTimeout(() => {
                         entry.target.classList.add('visible');
-                    }, index * 150); //150 ms between each card fade
-                    observer.unobserve(entry.target); // optional: fade in once
+                    }, index * 150);
+                    observer.unobserve(entry.target);
                 }
             });
         }, 
-        { threshold: 0.2 } // adjust how much of the element is visible before fade
+        { threshold: 0.2 }
     );
-
     faders.forEach(fader => observer.observe(fader));
-    });
-    </script>
+
+    // Fade-in for outside cards (faster)
+    const outsideFaders = document.querySelectorAll('.outside-fade-in');
+    const outsideObserver = new IntersectionObserver(
+        (entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const index = Array.from(outsideFaders).indexOf(entry.target);
+                    setTimeout(() => {
+                        entry.target.classList.add('visible');
+                    }, index * 75);
+                    observer.unobserve(entry.target);
+                }
+            });
+        },
+        { threshold: 0.2 }
+    );
+    outsideFaders.forEach(fader => outsideObserver.observe(fader));
+});
+</script>
 
     <body>
 
@@ -322,39 +357,39 @@
         <!-- Outside of the Classroom -->
         <section>
             <h2>Outside of the Classroom</h2>
-            <div class="cards">
+            <div class="outside-cards">
 
-                <div class="card fade-in">
+                <div class="card fade-in outside-fade-in">
                     <div class="card-emoji">🎹</div>
                     <div class="card-title">Piano</div>
                     <div class="card-desc">Performing and composing music in my free time.</div>
                 </div>
 
-                <div class="card fade-in">
+                <div class="card fade-in outside-fade-in">
                     <div class="card-emoji">🍳</div>
                     <div class="card-title">Cooking</div>
                     <div class="card-desc">Exploring cultures through food.</div>
                 </div>
 
-                <div class="card fade-in">
+                <div class="card fade-in outside-fade-in">
                     <div class="card-emoji">🌱</div>
                     <div class="card-title">Gardening</div>
                     <div class="card-desc">Growing plants and nurturing a sustainable garden.</div>
                 </div>
 
-                <div class="card fade-in">
+                <div class="card fade-in outside-fade-in">
                     <div class="card-emoji">❤️</div>
                     <div class="card-title">Volunteering</div>
                     <div class="card-desc">In my spare time I volunteer with organizations like H4H.</div>
                 </div>
 
-                <div class="card fade-in">
+                <div class="card fade-in outside-fade-in">
                     <div class="card-emoji">🥋</div>
                     <div class="card-title">Taekwondo</div>
                     <div class="card-desc">I am pursuing a lifelong goal of achieving a 4th-degree black belt.</div>
                 </div>
                 
-                <div class="card fade-in">
+                <div class="card fade-in outside-fade-in">
                     <div class="card-emoji">🔊</div>
                     <div class="card-title">Foreign Languages</div>
                     <div class="card-desc">Chasing C-3PO status.</div>
